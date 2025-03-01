@@ -1,31 +1,72 @@
-# Proyecto Final del Módulo 2
+# Proyecto Final (dom)
+## _Saul Omar Arguello Hernandez_
+> Este proyecto se realizó para destacar las habilidades en JS, CSS y HTML para la implementación de un LogIn y una caja de comentarios persistente. 
 
-### Estilos de la página desarrollados por:
->Saul Hernandez
+# Proyecto de Página Web con Comentarios Interactivos
 
-### Descripción
+Este proyecto es una página web que permite a los usuarios autenticarse y dejar comentarios. A continuación, se describe cómo funciona la página y los usuarios de prueba incluidos.
 
-Se llegó al acuerdo de tomar como punto de partida el sitio [9anime] cuya estructura es lo suficientemente sencilla como para inferir su estructura, se decidió sustituir el contenedor main por un div que contiene tanto el main como el aside para permitir una vista responsive dentro del CSS.
+## Descripción General
 
-Las ramas se crearon desde la consola de git con el siguiente comando:
-```ssh
-git checkout -b  <su nombre>
-```
+La página web consta de dos secciones principales:
 
-A continuacion se describen las caracteristicas principales de cada sección
-| Sección | Feature | Descripción |
-| ------ | ------ | ------ |
-| Header | Barra de busqueda | Cuando la página no es lo suficientemente ancha para mostrarse correctamente se sustituye por un unico icono con la leyenda "buscar".|
-| Separador | Distribución | La apariencia de la página cambia de acuerdo con el ancho disponible, con ayuda de Media Queries es posible cambiar entre las distribuciones para celular, tablet y ordenador. |
-| Main | Carrusel | Como portada de la página se observa un banner del 100% de ancho de la sección que contiene links tanto al openning de la serie como al sitio donde verlo, este carrusel tiene un indice en la parte superior derecha que al dar clic cambia entre los banners|
-| Main | Cartelera | Una serie de pequeñas tarjertas que muestran una breve reseña de la serie al pasar el mouse sobre las imagenes |
-| Aside | Filtros | Serie de 6 pup-up boxes que contienen las diferentes categorias disponibles en la pagina |
-| Aside | Ranking | Top 5 de las series mas vistas por dia, semana y mes según lo seleccione el usuario.|
-| Aside | Categorias | Separa las series de la pagina donde se puede filtrar unicamente en categorias específicas. |
-| Aside | Recientes | El texto contenido en la etiqueta P se recortan automaticamente para no sobreponerse sobre el resto del contenido. |
-| Footer | Botones | Enlaces a la misma página |
+1.  **Página de Inicio de Sesión (index.html):** Permite a los usuarios ingresar con un nombre de usuario y contraseña.
+2.  **Página Principal (home.html):** Una vez autenticados, los usuarios pueden ver su nombre y foto de perfil, así como dejar y eliminar comentarios.
 
-![Mi logo](https://i.imgur.com/HhoQJb5.png)
+## Funcionalidades
 
-[9anime]: <https://i.imgur.com/HhoQJb5.png>
-[Proyecto Final]: <https://github.com/ArgHero/ProyectoFinal>
+*   **Autenticación:** Los usuarios deben ingresar su nombre de usuario y contraseña para acceder a la página principal.
+*   **Visualización de Perfil:** Una vez autenticados, los usuarios ven su nombre y foto de perfil en la página principal.
+*   **Comentarios:**
+    *   Los usuarios pueden escribir comentarios en un área de texto y publicarlos.
+    *   Los comentarios se guardan en el almacenamiento local (localStorage) del navegador.
+    *   Cada comentario muestra el nombre de usuario, la fecha y hora de publicación, el cuerpo del comentario y la foto de perfil del usuario.
+    *   Los usuarios pueden eliminar sus propios comentarios.
+*   **Diseño Responsivo:** La página está diseñada para adaptarse a diferentes tamaños de pantalla.
+
+## Archivos del Proyecto
+
+*   `index.html`: Página de inicio de sesión.
+*   `index_style.css`: Estilos CSS para la página de inicio de sesión.
+*   `index_script.js`: Lógica JavaScript para la página de inicio de sesión.
+*   `home.html`: Página principal.
+*   `home_style.css`: Estilos CSS para la página principal.
+*   `home_script.js`: Lógica JavaScript para la página principal.
+
+## Usuarios de Prueba
+
+La página incluye los siguientes usuarios de prueba con nombre de usuario y contraseña predefinidos:
+|Nombre|Usuario|Contraseña|
+|-|-|-|
+| Saul Hernandez|SaulH | 1234|
+|Juan Perez|JuanP |1234 |
+|Maria Lopez|MaryL |1234 |
+|Pedro Ramirez|PeteR |1234 |
+|Ana Garcia|AnaG |1234 |
+|Jose Rodriguez |JoseR |1234 |
+|Luisa Martinez|LuisaM |1234 |
+
+## Instrucciones de Uso
+
+1.  Abre el archivo `index.html` en tu navegador.
+2.  Ingresa el nombre de usuario y la contraseña de uno de los usuarios de prueba.
+3.  Haz clic en "Iniciar sesión".
+4.  Una vez en la página principal (`home.html`), puedes ver tu perfil y dejar comentarios en el área de texto.
+5.  Haz clic en "Comentar" para publicar tu comentario.
+6.  Para eliminar un comentario, haz clic en el icono de "X" que aparece junto a tu comentario.
+
+## Notas Adicionales
+
+*   Los comentarios se guardan en el almacenamiento local del navegador, por lo que persistirán incluso si cierras y vuelves a abrir la página.
+*   Para eliminar todos los datos del almacenamiento local, puedes utilizar el botón "Clear LocalStorage" en la página principal.
+
+## Créditos
+
+*   Este proyecto fue desarrollado por \[Tu Nombre].
+*   Se utilizaron las siguientes librerías y recursos:
+    *   Moment.js para el manejo de fechas y horas.
+    *   Imágenes de perfil de Pinterest.
+
+![imagen](https://i.pinimg.com/736x/49/30/36/493036c96f7b95046d6645d4e8578ae6.jpg)
+
+¡Gracias por revisar este proyecto!
