@@ -58,11 +58,10 @@ La página incluye los siguientes usuarios de prueba con nombre de usuario y con
 ## Notas Adicionales
 
 *   Los comentarios se guardan en el almacenamiento local del navegador, por lo que persistirán incluso si cierras y vuelves a abrir la página.
-*   Para eliminar todos los datos del almacenamiento local, puedes utilizar el botón "Clear LocalStorage" en la página principal.
 
 ## Créditos
 
-*   Este proyecto fue desarrollado por \[Tu Nombre].
+*   Este proyecto fue desarrollado por Saul HErnandez.
 *   Se utilizaron las siguientes librerías y recursos:
     *   Moment.js para el manejo de fechas y horas.
     *   Imágenes de perfil de Pinterest.
